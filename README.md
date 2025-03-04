@@ -1,10 +1,7 @@
 # Leveraging Visual Large Language Models and Computer Vision for Cost-Effective and Consistent Street Food Safety Assessment in Kolkata India
 
 ## Authors
-[**Alexey Chernikov**](https://www.linkedin.com/in/alexey-chernikov-a739b173/)<sup>1</sup>, 
-**Klaus Ackermann**<sup>1*</sup>,  
-**Caitlin Brown**<sup>2</sup>,  
-**Denni Tommasi**<sup>3</sup>
+[**Alexey Chernikov**](https://www.linkedin.com/in/alexey-chernikov-a739b173/)<sup>1</sup>, **Klaus Ackermann**<sup>1*</sup>, **Caitlin Brown**<sup>2</sup>, **Denni Tommasi**<sup>3</sup>
 
 ## Affiliations
 <sup>1</sup>SoDa Labs & Department of Econometrics and Business Statistics, Monash Business School, Monash University  
