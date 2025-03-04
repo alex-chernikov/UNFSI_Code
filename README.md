@@ -2,7 +2,7 @@
 
 ## Authors
 **Alexey Chernikov**<sup>1</sup>,  
-**Klaus Ackermann**<sup>1*</sup> (*Corresponding Author: klaus.ackermann@monash.edu*),  
+**Klaus Ackermann**<sup>1*</sup>,  
 **Caitlin Brown**<sup>2</sup>,  
 **Denni Tommasi**<sup>3</sup>
 
