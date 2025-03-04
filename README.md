@@ -1,4 +1,18 @@
-# Leveraging Visual Large Language Models and Computer Vision for Cost-Effective and Consistent Street Food Safety Assesment in Kolkata India
+# Leveraging Visual Large Language Models and Computer Vision for Cost-Effective and Consistent Street Food Safety Assessment in Kolkata India
+
+## Authors
+**Alexey Chernikov**<sup>1</sup>,  
+**Klaus Ackermann**<sup>1*</sup> (*Corresponding Author: klaus.ackermann@monash.edu*),  
+**Caitlin Brown**<sup>2</sup>,  
+**Denni Tommasi**<sup>3</sup>
+
+## Affiliations
+<sup>1</sup>SoDa Labs & Department of Econometrics and Business Statistics, Monash Business School, Monash University  
+<sup>2</sup>Department of Economics, Université Laval  
+<sup>3</sup>Department of Economics, University of Bologna  
+
+## Publication
+**Forthcoming at AAAI 2025**
 
 ![alt text](./pipeline.jpg)
 
@@ -7,9 +21,9 @@
 The Jupyter notebook titled "StreetFood_Evaluation.ipynb" showcases the functionality of the proposed pipeline. 
 It includes a raw test video file, all the images extracted by the pipeline, and the analysis results of these images performed by our fine-tuned lightweight VLLMs.
 
-1. For those who do not intend to set up the required virtual environment, the notebook can still be explored as it contains all outputs (both text and images) already saved. It can be open in Google Colab or any IDE you prefer (PyCharm etc.)
+1. For those who do not intend to set up the required virtual environment, the notebook can still be explored as it contains all outputs (both text and images) already saved. It can be opened in Google Colab or any IDE you prefer (PyCharm, etc.).
 
-2. For replication: the notebook is fully functional and can be executed in virtual environment by anyone who wishes to replicate the process step by step.
+2. For replication: the notebook is fully functional and can be executed in a virtual environment by anyone who wishes to replicate the process step by step.
 To launch the notebook from the command line:
 
 
@@ -17,12 +31,12 @@ To launch the notebook from the command line:
     conda activate sfood
     jupyter notebook StreetFood_Evaluation.ipynb 
 
-Virtual environment installation described bellow.
+Virtual environment installation is described below.
 
-Once the virtual environment is set up, you can replace the test video file with your own, if you wish. 
-Doing so, please note that all models were trained on data collected in Kolkata, India. 
+Once the virtual environment is set up, you can replace the test video file with your own. 
+Please note that all models were trained on data collected in Kolkata, India. 
 As a result, the models' performance may vary when applied to facilities in other regions with different appearances. 
-Nonetheless, given the diverse representations introduced during training, it may still be worthwhile to test your own video.
+Nonetheless, given the diverse representations introduced during training, testing your own video may still be worthwhile.
 
 # Virtual environment setup
 ### Recommended Installation:
@@ -39,17 +53,17 @@ The total space required by the virtual environment is around 10Gb.
 
 
 ### Additional downloading
-For training Paligemma and Florence-2 there will be additional downloading of the model checkpoints from the HuggingFace servers.
+For training Paligemma and Florence-2, additional downloads of the model checkpoints from the HuggingFace servers will be required.
 
 # Datasets
 All data used to train each element of the proposed framework was collected exclusively during the project. 
 Due to ethical and privacy concerns, the data is currently not shared as it is undergoing anonymization to protect the vendors from unwanted attention. 
-We plan to release the full datasets for each framework element prior to the conference.
+
 
 
 # Training procedures
-There are several key elements of the proposed framework each with its own training procedure.
-In order to train the model you need to launch
+The proposed framework has several key elements, each with its own training procedure.
+To train the model, you need to launch
 
     cd {PROJECT_ROOT}
     conda activate sfood
@@ -66,7 +80,7 @@ mode name: "eval_cls". Evaluate classifier.
 
 ## VLLMs
 ### ChatGPT
-!!! SET the API_KEY first in the const.py file!!!
+SET the API_KEY first in the const.py file
 
 mode name: "gpt_train_data". Retrieves ChatGPT replies for train images.
 mode name: "gpt_test_data". Get ChatGPT replies for validation images
